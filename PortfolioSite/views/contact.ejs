@@ -1,0 +1,55 @@
+<%- include('partials/header') %>
+
+<!-- Main contact container -->
+<div class="container mt-5 mb-5">
+
+    <!-- Page heading -->
+    <h1 class="text-center mb-3">Contact Me</h1>
+
+    <p class="text-center mb-4">
+        Have a question or want to get in touch? Send me a message!
+    </p>
+
+    <!-- Contact form -->
+    <div class="contact-content">
+
+        <form action="/contact" method="POST">
+
+            <!-- Name field -->
+            <div class="mb-3">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" class="form-control"
+                    id="name" name="name"
+                    placeholder="Enter your name" required>
+            </div>
+
+            <!-- Email field -->
+            <div class="mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" class="form-control"
+                    id="email" name="email"
+                    placeholder="Enter your email" required>
+            </div>
+
+            <!-- Message field -->
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control"
+                        id="message" name="message"
+                        rows="5"
+                        placeholder="Write your message here..."
+                        required></textarea>
+            </div>
+
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary">
+                Send Message
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+<%- include('partials/footer') %>
