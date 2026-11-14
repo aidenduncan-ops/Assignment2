@@ -1,33 +1,92 @@
 <%- include('partials/header') %>
 
-<div class="container mt-5">
+<!-- Main projects container -->
+<div class="container">
 
-    <h1>Projects</h1>
+    <!-- Page introduction -->
+    <h1 class="text-center mb-4">My Projects</h1>
 
-    <div class="mb-4">
-        <h3>Portfolio Website</h3>
+    <p class="text-center mb-5">
+        Here are some of the projects I have worked on
+        throughout my studies and personal development.
+    </p>
 
-        <p>
-            A personal portfolio website created using HTML, CSS, Express, and EJS.
-        </p>
+    <!-- Project card layout -->
+    <div class="row">
+
+        <!-- Portfolio website project -->
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card project-card h-100">
+
+                <!-- Project screenshot -->
+                <img src="/images/portfolio.png"
+                     class="card-img-top"
+                     alt="Portfolio Website">
+
+                <!-- Project description -->
+                <div class="card-body">
+                    <h5 class="card-title">Portfolio Website</h5>
+
+                    <p class="card-text">
+                        A personal portfolio website created using
+                        HTML, CSS, Express, and EJS.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Networking project -->
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card project-card h-100">
+
+                <!-- Networking screenshot -->
+                <img src="/images/networking.png"
+                    class="card-img-top"
+                    alt="Networking Lab Projects">
+
+                <!-- Project description -->
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <i class="fa-solid fa-network-wired"></i>
+                        Networking Lab Projects
+                    </h5>
+
+                    <p class="card-text">
+                        Configuration and troubleshooting of network
+                        devices, routing protocols, and network services.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- JavaScript project -->
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card project-card h-100">
+
+                <!-- JavaScript screenshot -->
+                <img src="/images/javascript.png"
+                    class="card-img-top"
+                    alt="JavaScript Applications">
+
+                <!-- Project description -->
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <i class="fa-brands fa-js"></i>
+                        JavaScript Applications
+                    </h5>
+
+                    <p class="card-text">
+                        Small web applications created while learning
+                        JavaScript and Node.js.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
     </div>
-
-    <div class="mb-4">
-        <h3>Networking Lab Projects</h3>
-
-        <p>
-            Configuration and troubleshooting of network devices and services.
-        </p>
-    </div>
-
-    <div class="mb-4">
-        <h3>JavaScript Applications</h3>
-
-        <p>
-            Small web applications created while learning JavaScript and Node.js.
-        </p>
-    </div>
-
 </div>
 
 <%- include('partials/footer') %>
